@@ -8,3 +8,11 @@ beans = n * 15
 print(str(water) + ' ml of water')
 print(str(milk) + ' ml of milk')
 print(str(beans) + ' ml of coffee beans')
+# Initial
+print("Starting to make a coffee")
+print("Grinding coffee beans")
+print("Boiling water")
+print("Mixing boiled water with crushed coffee beans")
+print("Pouring coffee into the cup")
+print("Pouring some milk into the cup")
+print("Coffee is ready!")
