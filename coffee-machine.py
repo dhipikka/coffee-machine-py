@@ -1,4 +1,3 @@
-The basics
 print("Starting to make a coffee")
 print("Grinding coffee beans")
 print("Boiling water")
