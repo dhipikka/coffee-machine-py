@@ -1,14 +1,15 @@
 # coffee-machine-py
-Implementing a coffee machine using python
+## Implementing a coffee machine using python
 
 
-Stage 3/6: Enough coffee for everyone
+### Stage 3/6: Enough coffee for everyone
 
-Description:
+**Description**:
+
 A real coffee machine doesn't have an infinite supply of water, milk, or coffee beans. And if you input a really big number, it's almost certain that a real coffee machine wouldn't have the supplies needed to make all that coffee for you.
 In this stage, you need to improve the previous program. Now you will check amounts of water, milk, and coffee beans available in your coffee machine at the moment.
 
-Objectives:
+**Objectives**:
 
 Write a program that does the following:
 
