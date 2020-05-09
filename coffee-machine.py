@@ -1,16 +1,20 @@
+# Calculate sufficiency or availability
+print('Write how many ml of water the coffee machine has:')
+av_water = int(input())
+print('Write how many ml of milk the coffee machine has:')
+av_milk = int(input())
+print('Write how many grams of coffee beans the coffee machine has:')
+av_beans = int(input())
 print('Write how many cups of coffee you will need:')
-n = int(input())
-print('For ' + str(n) + ' cups of coffee you will need:')
-water = n * 200
-milk = n * 50
-beans = n * 15
-print(str(water) + ' ml of water')
-print(str(milk) + ' ml of milk')
-print(str(beans) + ' ml of coffee beans')
-print("Starting to make a coffee")
-print("Grinding coffee beans")
-print("Boiling water")
-print("Mixing boiled water with crushed coffee beans")
-print("Pouring coffee into the cup")
-print("Pouring some milk into the cup")
-print("Coffee is ready!")
+cups = int(input())
+waterCups = av_water // 200
+milkCups = av_milk // 50
+beansCups = av_beans // 15
+leastCups = min(waterCups,min(milkCups,beansCups))
+if cups > leastCups:
+    print('No, I can make only ' + str(leastCups) + ' cups of coffee.')
+elif cups == leastCups:
+    print('Yes, I can make that amount of coffee.')
+else:
+    extraCups = leastCups - cups
+    print('Yes, I can make that amount of coffee (and even ' + str(extraCups) + ' more than that)')
